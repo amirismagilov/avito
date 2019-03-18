@@ -1,4 +1,4 @@
-from lib import create_flat, add_flat, search_flat, price_filter
+from app.lib import create_flat, add_flat, search_flat, price_filter
 
 flats = []
 
@@ -43,4 +43,5 @@ print(search_flat(flats, ', '))
 
 print(price_filter(flats, 5_000_100))
 
-
+data = (2, 20, 3, 'Казань', 'Вахитовский', 'Волкова 5', 2_000_000)
+print(create_flat(data))
